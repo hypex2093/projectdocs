@@ -1,113 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
-body {
-  background-color: rgb(44, 44, 193);
-  color: rgb(244, 225, 225);
-  height: auto;
-  min-height: 100vh;
-}
-.weken {
-  background-color: navy;
-}
-.container {
-  font-family: "Roboto Slab", sans-serif;
-  max-width: 65vw;
-  margin-left: auto;
-  margin-right: auto;
+* {
+  box-sizing: border-box;
 }
 
-.title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: capitalize;
-  margin-top: 2em;
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  background-color: #040f38;
+}
+
+.weken {
+  background-color: #040f38;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 28px;
 }
 
 .small-top {
-  font-family: "Roboto Slab",sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 0.8rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 0.4rem;
+  margin: 0 0 12px;
+  opacity: 0.75;
 }
+page { display: block; }
+
 
 .page-title {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(3rem, 5vw, 4rem);
+  font-size: 4rem;
   font-weight: 900;
-  color: var(--text-dark);
-  margin: 0 0 0.8rem;
+  margin: 0 0 14px;
+  line-height: 1.05;
 }
 
 .author {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 500;
-  margin-bottom: 2rem;
-  color: var(--text-muted);
+  margin: 0 0 34px;
+  opacity: 0.8;
 }
 
 .intro-row {
-    font-family:"Roboto Slab", sans-serif;
   display: flex;
-  font-size: larger;
-  font-weight: 700;
-  gap: 2rem;
+  gap: 24px;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
-  line-height: 1.5;
+  margin: 0 0 34px;
+  line-height: 1.6;
+  font-size: 1.15rem;
+  font-weight: 600;
 }
 
 .weeks {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.2rem 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
 }
 
 .week-link {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-size: 30px;
-  color: rgb(244, 225, 225);
-
+  color: white;
   text-decoration: none;
-  transition: transform 0.1s ease-out, opacity 0.1s linear;
+  background: #071756;
+  border-radius: 16px;
+  padding: 22px 22px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  transition: all 300ms ease;
 }
 
-.week-link:hover,
-.week-link:focus-visible {
-  transform: translateY(-3px);
-  opacity: 0.7;
+.week-link:hover {
+  transform: translateY(-6px);
 }
 
-/* jouw oude .title mag blijven voor andere pagina's */
-.title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: capitalize;
-  margin-top: 2em;
+.vertical-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
 }
 .vertical-buttons a {
-  font-family: "Poppins", "sans-serif ";
+  font-family: "Poppins", sans-serif;
+  color: rgb(244, 225, 225);
+  display: inline-block;
+  padding: 10px 14px;
 }
 
-/* responsive */
+.vertical-buttons a:hover {
+  font-size: 4.2rem;
+  transition: all 300ms ease;
+  text-decoration: none;
+}
+
 @media (max-width: 960px) {
   .container {
-    max-width: 100%;
+    padding: 38px 18px;
   }
   .page-title {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
 @media (max-width: 600px) {
+  .page-title {
+    font-size: 2.6rem;
+  }
   .intro-row {
     flex-direction: column;
   }
-  .page-title {
-    font-size: 2.5rem;
+  .week-link {
+    font-size: 26px;
   }
 }
