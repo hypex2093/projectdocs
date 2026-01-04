@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -8,7 +7,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Roboto Slab", serif;
+  font-family: "Inter";
   color: white;
   background-color: #040f38;
 }
@@ -24,7 +23,7 @@ body {
 }
 
 .small-top {
-  font-family: "Roboto Slab", serif;
+  font-family: "Inter";
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -43,7 +42,7 @@ page { display: block; }
 }
 
 .author {
-  font-family: "Roboto Slab", serif;
+  font-family: "Inter";
   font-weight: 500;
   margin: 0 0 34px;
   opacity: 0.8;
